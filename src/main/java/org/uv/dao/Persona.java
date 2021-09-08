@@ -10,17 +10,17 @@ package org.uv.dao;
  * @author gusky
  */
 public class Persona {
-    private String clave;
+    private long clave;
     private String nombre;
     private String direccion;
     private String telefono;
 
 
-    public String getClave() {
+    public long getClave() {
         return clave;
     }
 
-    public void setClave(String clave) {
+    public void setClave(long clave) {
         this.clave = clave;
     }
 

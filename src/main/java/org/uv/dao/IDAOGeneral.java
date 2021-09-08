@@ -13,7 +13,7 @@ import java.util.List;
  */
 public interface IDAOGeneral<T> {
     
-    public T agregar(T pojo);
+    public boolean agregar(T pojo);
     public boolean modificar (T pojo);
     public boolean eliminar (long clave);
     public T buscarPorID(long clave);

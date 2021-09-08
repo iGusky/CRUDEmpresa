@@ -41,7 +41,7 @@ public class DepartamentoDAO implements IDAOGeneral<Departamento> {
                 query.execute();
                 res = true;
             } catch(Exception e){
-                Logger.getLogger(PersonaDAO.class.getName()).log(Level.SEVERE, null, e);
+                Logger.getLogger(DepartamentoDAO.class.getName()).log(Level.SEVERE, null, e);
             }
         }
         return res;
@@ -61,7 +61,7 @@ public class DepartamentoDAO implements IDAOGeneral<Departamento> {
                 query.executeUpdate();
                 return true;
             } catch (Exception ex) {
-                Logger.getLogger(PersonaDAO.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(DepartamentoDAO.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
         return false;
@@ -76,7 +76,7 @@ public class DepartamentoDAO implements IDAOGeneral<Departamento> {
             sql.execute();
             return true;
         } catch (Exception ex) {
-            Logger.getLogger(PersonaDAO.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DepartamentoDAO.class.getName()).log(Level.SEVERE, null, ex);
         }
         return false;
     }
@@ -99,7 +99,7 @@ public class DepartamentoDAO implements IDAOGeneral<Departamento> {
              return pojo;
             
         } catch (Exception ex) {
-            Logger.getLogger(PersonaDAO.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DepartamentoDAO.class.getName()).log(Level.SEVERE, null, ex);
         }
         return null;    
     }
