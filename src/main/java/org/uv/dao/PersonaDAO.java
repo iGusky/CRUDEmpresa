@@ -119,7 +119,7 @@ public class PersonaDAO implements IDAOGeneral<Persona>{
                 String sql = "SELECT * FROM persona;";   
                 rs = conexion.query(sql);
                 while(rs.next()){
-                    Departamento p = new Departamento();
+                    Persona p = new Persona();
                     p.setClave(rs.getLong(1));
                     p.setNombre(rs.getString(2));
                     p.setDireccion(rs.getString(3));
