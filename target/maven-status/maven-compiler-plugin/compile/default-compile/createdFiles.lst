@@ -1,3 +1,10 @@
-org\uv\utils\ConexionDB.class
-org\uv\dao\Persona.class
-org\uv\dao\PersonaDAO.class
+org\uv\filter\AuthorizationFilter.class
+org\uv\models\DepartamentoModel.class
+org\uv\beans\DepartamentoBean.class
+org\uv\models\EmpleadoModel.class
+org\uv\beans\EmpleadoBean.class
+org\uv\beans\Login.class
+org\uv\beans\SessionUtils.class
+org\uv\entities\Departamento.class
+org\uv\models\HibernateUtil.class
+org\uv\entities\Empleado.class

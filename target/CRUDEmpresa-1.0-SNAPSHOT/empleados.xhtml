@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <h:head>
+        <title>420 Solutions</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+    </h:head>
+
+    <h:body class="container">
+
+        <h1>Registro de empleados</h1>
+        <ui:include src="/components/navbar.xhtml" />
+        <p:growl id="growl" showDetail="true" />
+        <div class="ui-fluid" >
+
+            <h:form class="ui-g">
+                <div class="ui-g-12 ui-md-6 ui-lg-6">
+                    <h:outputLabel for="nombre" value="Nombre "/>
+                    <p:inputText required="true" id="nombre" value="#{empleadoBean.empleado.nombre}" />
+                </div>
+                <div class="ui-g-12 ui-md-6 ui-lg-6">
+                    Dirección
+                    <p:inputText required="true" value="#{empleadoBean.empleado.direccion}"/>
+                </div>
+                <div class="ui-g-12 ui-md-6 ui-lg-6">
+                    Teléfono
+                    <p:inputText required="true" value="#{empleadoBean.empleado.telefono}"/>
+                </div>
+                <div class="ui-g-12 ui-md-6 ui-lg-6" style="margin-bottom:10px" cellpadding="5">
+                    <p:outputLabel for="@next" value="Departamento" />
+                    <p:selectOneMenu id="console" value="#{empleadoBean.empleado.clave_departamento}" required="true">
+                        <f:selectItem itemLabel="Seleccione uno..." />
+                        <f:selectItem itemLabel="Administracion" itemValue="1" />
+                        <f:selectItem itemLabel="Sistemas" itemValue="2" />
+                        <f:selectItem itemLabel="Soporte" itemValue="3" />
+                        <f:selectItem itemLabel="Seguridad" itemValue="4" />
+                    </p:selectOneMenu>
+                </div>
+                <div class="ui-g-12 ui-md-6 ui-lg-6">
+                    Usuario
+                    <p:inputText required="true" value="#{empleadoBean.empleado.usuario}"/>
+                </div>
+                <div class="ui-g-12 ui-md-6 ui-lg-6">
+                    Contraseña
+                    <p:inputText required="true" value="#{empleadoBean.empleado.password}"/>
+                </div>
+                &nbsp;
+                <p:commandButton value="Registrar" action="#{empleadoBean.guardar()}" update="growl"/>
+
+            </h:form>
+
+            <hr></hr>
+            <h2>Lista de empleados</h2>
+            <p:dataTable var="empleadoActual" value="#{empleadoBean.empleados}">
+                <p:column headerText="Clave">
+                    #{empleadoActual.clave}
+                </p:column>
+                <p:column headerText="Nombre">
+                    #{empleadoActual.nombre}
+                </p:column>
+                <p:column headerText="Dirección">
+                    #{empleadoActual.direccion}
+                </p:column>
+                <p:column headerText="Teléfono">
+                    #{empleadoActual.telefono}
+                </p:column>
+                <p:column headerText="Departamento">
+                    #{empleadoActual.clave_departamento}
+                </p:column>
+            </p:dataTable>
+
+        </div>
+    </h:body>
+</html>
+
