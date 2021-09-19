@@ -10,7 +10,8 @@
         <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/dsw</property>
         <property name="hibernate.connection.username">postgres</property>
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
-
+        
+        <!--        conexion de la bd a las clases-->
         <mapping class="org.uv.entities.Empleado" />
         <mapping class="org.uv.entities.Departamento" />
     </session-factory>

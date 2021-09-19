@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:p="http://primefaces.org/ui"
+        xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+        xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+    </h:head>
+    <h:body>
+        <p:panelGrid columns="2">
+            <f:facet name="header">
+                INICIO SESION
+            </f:facet>
+            <h:outputLabel for="user" value="Usuario: *" />
+            <p:inputText id="firstname" value="#{bean.firstname}" label="Usuario" />
+            <h:outputLabel for="password" value="Password: *" />
+            <p:inputText id="surname" value="#{bean.surname}" label="Password"/>
+            <f:facet name="footer">
+                <p:commandButton type="button" value="Iniciar" icon="ui-icon-check" />
+                <p:commandButton type="button" value="Registrar" icon="ui-icon-check" />
+            </f:facet>
+        </p:panelGrid>
+    </h:body>
+</html>

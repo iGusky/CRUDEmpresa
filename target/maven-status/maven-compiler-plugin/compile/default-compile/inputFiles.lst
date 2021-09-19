@@ -1,10 +1,10 @@
-C:\Users\Gustavo\Documents\NetBeansProjects\CRUDEmpresa\src\main\java\org\uv\beans\SessionUtils.java
-C:\Users\Gustavo\Documents\NetBeansProjects\CRUDEmpresa\src\main\java\org\uv\filter\AuthorizationFilter.java
-C:\Users\Gustavo\Documents\NetBeansProjects\CRUDEmpresa\src\main\java\org\uv\beans\Login.java
-C:\Users\Gustavo\Documents\NetBeansProjects\CRUDEmpresa\src\main\java\org\uv\entities\Departamento.java
-C:\Users\Gustavo\Documents\NetBeansProjects\CRUDEmpresa\src\main\java\org\uv\models\HibernateUtil.java
-C:\Users\Gustavo\Documents\NetBeansProjects\CRUDEmpresa\src\main\java\org\uv\entities\Empleado.java
-C:\Users\Gustavo\Documents\NetBeansProjects\CRUDEmpresa\src\main\java\org\uv\models\EmpleadoModel.java
-C:\Users\Gustavo\Documents\NetBeansProjects\CRUDEmpresa\src\main\java\org\uv\beans\DepartamentoBean.java
-C:\Users\Gustavo\Documents\NetBeansProjects\CRUDEmpresa\src\main\java\org\uv\models\DepartamentoModel.java
-C:\Users\Gustavo\Documents\NetBeansProjects\CRUDEmpresa\src\main\java\org\uv\beans\EmpleadoBean.java
+C:\Users\citla\Documents\Desarrollo Web\CRUDEmpresa\src\main\java\org\uv\beans\EmpleadoBean.java
+C:\Users\citla\Documents\Desarrollo Web\CRUDEmpresa\src\main\java\org\uv\models\HibernateUtil.java
+C:\Users\citla\Documents\Desarrollo Web\CRUDEmpresa\src\main\java\org\uv\entities\Empleado.java
+C:\Users\citla\Documents\Desarrollo Web\CRUDEmpresa\src\main\java\org\uv\models\EmpleadoModel.java
+C:\Users\citla\Documents\Desarrollo Web\CRUDEmpresa\src\main\java\org\uv\beans\SessionUtils.java
+C:\Users\citla\Documents\Desarrollo Web\CRUDEmpresa\src\main\java\org\uv\beans\Login.java
+C:\Users\citla\Documents\Desarrollo Web\CRUDEmpresa\src\main\java\org\uv\beans\DepartamentoBean.java
+C:\Users\citla\Documents\Desarrollo Web\CRUDEmpresa\src\main\java\org\uv\filter\AuthorizationFilter.java
+C:\Users\citla\Documents\Desarrollo Web\CRUDEmpresa\src\main\java\org\uv\entities\Departamento.java
+C:\Users\citla\Documents\Desarrollo Web\CRUDEmpresa\src\main\java\org\uv\models\DepartamentoModel.java

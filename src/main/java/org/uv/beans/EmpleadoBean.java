@@ -70,5 +70,12 @@ public class EmpleadoBean implements Serializable {
                 addMessage(null, new FacesMessage(severity, summary, detail));
     }
     
+    public void delete(){
+//        EmpleadoModel empleadoModel = new EmpleadoModel();
+        empleadoModel.delete(empleado);
+    }
 
+    public void update(){
+        empleadoModel.update(empleado);
+    }
 }

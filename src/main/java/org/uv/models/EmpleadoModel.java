@@ -89,4 +89,44 @@ public class EmpleadoModel {
         }
         return valid;
     }
+    
+    public boolean delete(Empleado empleado){
+        boolean result = true;
+        Session session = null;
+        Transaction transaction = null;
+        try{
+            session = sessionFactory.openSession();
+            transaction = session.beginTransaction();
+            session.delete(empleado);
+            transaction.commit();
+        }catch (Exception e){
+            result = false;
+            if(transaction != null){
+                transaction.rollback();
+            }
+        }finally{
+            session.close();
+        }
+        return result;
+    }
+    
+    public boolean update(Empleado empleado) {
+        boolean result = true;
+        Session session = null;
+        Transaction transaction = null;
+        try {
+            session = sessionFactory.openSession();
+            transaction = session.beginTransaction();
+            session.update(empleado);
+            transaction.commit();
+        } catch (Exception e) {
+            result = false;
+            if (transaction != null) {
+                    transaction.rollback();
+            }
+        } finally {
+            session.close();
+        }
+        return result;
+    }
 }
